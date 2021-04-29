@@ -1,62 +1,47 @@
 .m-card-primary {
   @extend .m-card;
-  @include bg-color('primary');
-  @include color('second');
-
+  width: 100%;
+ 
 
   @include breakpoint-up('md') {
     display: grid;
-    grid-template-columns: 51% 49%;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+  }
+
+  @include breakpoint-up('lg') {
+    display: block;
   }
 
 }
 
 
 .m-card-primary-header {
- 
-  .md-img, .lg-img {
-
-    width: 100%;
-  }
-
+  width: 100%;
+  text-align: center;
 }
 
 
 .m-card-primary-body {
-  position: relative;
-  @include padding-y(4.5rem);
-
-    .card-icon {
-
-      position: absolute;
-      top: -1rem;
-
-
-      @include breakpoint-up('md') {
-        top: 10rem;
-        left: -1rem;
-      }
-
-      @include breakpoint-up('lg') {
-        left: -3rem;
-      }
-
-    }
-
-    .a-btn-third {
-
-      margin-top: 2.5rem;
-    }
+  width: 100%;
+  
+  .body-content {
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
 
 
     @include breakpoint-up('md') {
-      @include padding-y(7.5rem);
+      width: 100%;
+      margin: 0;
     }
 
-    @include breakpoint-up('lg') {
-      @include padding-y(12.5rem);
-    }
-
+  }
+  
 }
+
+
+
+
 
 

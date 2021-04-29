@@ -1,4 +1,26 @@
 .m-text-block-second {
   @extend .m-text-block;
+  text-align: center;
+
+
+  @include breakpoint-up('md') {
+    text-align: left;
+  }
+
+  @include breakpoint-up('lg') {
+    text-align: center;
+  }
 
 }
+
+
+.m-text-block-second-heading {
+  margin-bottom: 1rem;
+
+
+  @include breakpoint-up('md') {
+    margin-bottom: 2rem;
+  }
+
+}
+

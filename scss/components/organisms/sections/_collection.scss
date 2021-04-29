@@ -1,0 +1,15 @@
+.o-collection-cards {
+
+
+  @include breakpoint-up('md') {
+    position: relative;
+    z-index: 2;
+    top: -5rem;
+  }
+ 
+}
+
+
+.o-collection-heading {
+ text-align: center;
+}

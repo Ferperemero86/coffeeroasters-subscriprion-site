@@ -126,3 +126,9 @@
   margin-top: $size;
   margin-bottom: $size;
 }
+
+@mixin margin-top($size) {
+  $val: map-get($margin-y, $size);
+  
+  margin-top: $val;
+}

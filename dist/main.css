@@ -436,6 +436,22 @@ a {
   transition: margin-left 0.3s ease-in-out;
 }
 
+.margin-top {
+  margin-top: 7.5rem;
+}
+
+@media screen and (min-width: 62rem) {
+  .margin-top {
+    margin-top: 9rem;
+  }
+}
+
+@media screen and (min-width: 90rem) {
+  .margin-top {
+    margin-top: 12.5rem;
+  }
+}
+
 .hidden {
   display: none;
 }
@@ -617,7 +633,6 @@ a {
 @media screen and (min-width: 90rem) {
   .a-heading-1, .a-heading-1-second {
     font-size: 4rem;
-    line-height: 4.5rem;
   }
 }
 
@@ -653,10 +668,30 @@ a {
 }
 
 .a-heading-third {
-  font-size: 4.5rem;
   color: white;
   font-weight: 800;
   opacity: 0.25;
+}
+
+.a-large-heading {
+  font-size: 3rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(#343e4c), to(white));
+  background: linear-gradient(180deg, #343e4c, white);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+@media screen and (min-width: 62rem) {
+  .a-large-heading {
+    font-size: 7rem;
+  }
+}
+
+@media screen and (min-width: 90rem) {
+  .a-large-heading {
+    font-size: 9.375rem;
+  }
 }
 
 .a-link, .a-link-primary {
@@ -720,6 +755,10 @@ a {
   }
 }
 
+.a-img-primary {
+  width: 15.75rem;
+}
+
 .m-text-block, .m-text-block-primary, .m-text-block-second, .m-text-block-third {
   display: inline-block;
 }
@@ -744,6 +783,32 @@ a {
   }
 }
 
+.m-text-block-second {
+  text-align: center;
+}
+
+@media screen and (min-width: 62rem) {
+  .m-text-block-second {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 90rem) {
+  .m-text-block-second {
+    text-align: center;
+  }
+}
+
+.m-text-block-second-heading {
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 62rem) {
+  .m-text-block-second-heading {
+    margin-bottom: 2rem;
+  }
+}
+
 .m-text-blocks, .m-text-blocks-primary {
   width: 100%;
 }
@@ -752,71 +817,51 @@ a {
   margin-top: 2.5rem;
 }
 
-.m-card .header, .m-card-primary .header {
-  width: 100%;
-}
-
-.m-card .body, .m-card-primary .body {
-  width: 100%;
+.m-card, .m-card-primary {
+  display: inline-block;
 }
 
 .m-card-primary {
-  background-color: black;
-  color: white;
+  width: 100%;
 }
 
 @media screen and (min-width: 62rem) {
   .m-card-primary {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 51% 49%;
-        grid-template-columns: 51% 49%;
+    -ms-grid-columns: 1fr 2fr;
+        grid-template-columns: 1fr 2fr;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
-.m-card-primary-header .md-img, .m-card-primary-header .lg-img {
+@media screen and (min-width: 90rem) {
+  .m-card-primary {
+    display: block;
+  }
+}
+
+.m-card-primary-header {
   width: 100%;
+  text-align: center;
 }
 
 .m-card-primary-body {
-  position: relative;
-  padding-top: 4.5rem;
-  padding-bottom: 4.5rem;
+  width: 100%;
 }
 
-.m-card-primary-body .card-icon {
-  position: absolute;
-  top: -1rem;
-}
-
-@media screen and (min-width: 62rem) {
-  .m-card-primary-body .card-icon {
-    top: 10rem;
-    left: -1rem;
-  }
-}
-
-@media screen and (min-width: 90rem) {
-  .m-card-primary-body .card-icon {
-    left: -3rem;
-  }
-}
-
-.m-card-primary-body .a-btn-third {
-  margin-top: 2.5rem;
+.m-card-primary-body .body-content {
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
 }
 
 @media screen and (min-width: 62rem) {
-  .m-card-primary-body {
-    padding-top: 7.5rem;
-    padding-bottom: 7.5rem;
-  }
-}
-
-@media screen and (min-width: 90rem) {
-  .m-card-primary-body {
-    padding-top: 12.5rem;
-    padding-bottom: 12.5rem;
+  .m-card-primary-body .body-content {
+    width: 100%;
+    margin: 0;
   }
 }
 
@@ -853,6 +898,27 @@ a {
 
 .m-vertical-menu .btn {
   margin-top: 1rem;
+}
+
+@media screen and (min-width: 90rem) {
+  .m-cards-primary {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    -webkit-column-gap: 1.5rem;
+            column-gap: 1.5rem;
+  }
+}
+
+.m-cards-primary-card {
+  margin-top: 2rem;
+}
+
+@media screen and (min-width: 62rem) {
+  .m-cards-primary-card {
+    margin-top: 1.5rem;
+  }
 }
 
 .m-slider {
@@ -941,20 +1007,16 @@ a {
   }
 }
 
-.o-about {
-  display: block;
-  padding-top: 3.5rem;
-  padding-bottom: 6rem;
-}
-
-.o-about .a-btn-second {
-  margin-top: 2.5rem;
-}
-
 @media screen and (min-width: 62rem) {
-  .o-about {
-    display: none;
+  .o-collection-cards {
+    position: relative;
+    z-index: 2;
+    top: -5rem;
   }
+}
+
+.o-collection-heading {
+  text-align: center;
 }
 
 .o-design .color {

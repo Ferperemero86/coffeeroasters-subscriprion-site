@@ -1,0 +1,17 @@
+.a-large-heading {
+  @include font-size('lg', $heading-sizes);
+  background: linear-gradient(180deg, hsl(215, 19%, 25%), white);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+  background-clip: text;
+
+
+  @include breakpoint-up('md') {
+    @include font-size('xxlg', $heading-sizes);
+  }
+
+  @include breakpoint-up('lg') {
+    @include font-size('xxxlg', $heading-sizes);
+  }
+
+}

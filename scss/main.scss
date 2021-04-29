@@ -23,7 +23,8 @@
 
 @import './components/atoms/heading/heading';
 @import './components/atoms/heading/heading-second';
-@import './components/atoms/heading/a-heading-third';
+@import './components/atoms/heading/heading-third';
+@import './components/atoms/heading/large-heading';
 
 @import './components/atoms/link/link';
 @import './components/atoms/link/link-primary';
@@ -36,6 +37,8 @@
 @import './components/atoms/character-icon/character-icon';
 @import './components/atoms/character-icon/character-icon-primary';
 @import './components/atoms/character-icon/character-icon-second';
+
+@import './components/atoms/img/img-primary';
 
 @import './components/molecules/text-block/text-block';
 @import './components/molecules/text-block/text-block-primary';
@@ -52,6 +55,8 @@
 @import './components/molecules/menu/menu-primary';
 @import './components/molecules/menu/vertical-menu';
 
+@import './components/molecules/cards/cards-primary';
+
 @import './components/molecules/slider/slider';
 
 @import './components/organisms/header/header';
@@ -60,7 +65,7 @@
 @import './components/organisms/menu-bar/menu-bar';
 @import './components/organisms/menu-bar/menu-bar-primary';
 
-@import './components/organisms/sections/about';
+@import './components/organisms/sections/collection';
 @import './components/organisms/sections/design';
 @import './components/organisms/sections/approach';
 @import './components/organisms/sections/projects';
