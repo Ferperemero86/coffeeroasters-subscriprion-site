@@ -1,15 +1,14 @@
 .m-menu-primary {
   @extend .m-menu;
 
-  .a-link {
-    @include color('second');
+  &-link {
 
     &:not(:last-child) {
-      margin-right: 1rem;
+      margin-right: 2rem;
 
 
-      @include breakpoint-up('md') {
-        margin-right: 2rem;
+      @include breakpoint-up('lg') {
+        margin-right: 3.5rem;
       }
     }
   

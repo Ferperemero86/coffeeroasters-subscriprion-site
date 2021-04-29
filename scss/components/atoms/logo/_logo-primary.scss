@@ -1,5 +1,14 @@
 .a-logo-primary {
   @extend .a-logo;
-  width: 10.06rem;
-  height: 1.875rem;  
+  width: 10.125rem;
+  
+  
+  @include breakpoint-up('md') {
+    width: 14.75rem;
+  }
+
+  @include breakpoint-up('lg') {
+    width: 12.68rem;
+  }
+
 }

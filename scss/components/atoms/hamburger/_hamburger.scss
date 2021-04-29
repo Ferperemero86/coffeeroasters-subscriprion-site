@@ -1,4 +1,23 @@
 .a-hamburger {
-  width: 1.5rem;
-  height: 1.125rem;
+  display: inline-block;
+  width: 1rem;
+  height: 0.9375rem;
+  @include color('fourth');
+
+
+  &-bar {
+
+    display: block;
+    width: 100%;
+    border: 1px solid;
+
+    &:not(:first-child) {
+
+      margin-top: 0.2rem;
+    }
+
+  }
+
 }
+
+

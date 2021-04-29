@@ -4,7 +4,7 @@
 .a-heading-1 {
   @include font-size('sm', $heading-sizes);
   @include line-height('sm', $heading-lh-sizes);
-  @include font-weight('lg', $font-weights);
+  @include font-weight('xlg', $font-weights);
 
   @include breakpoint-up('md') {
     @include font-size('lg', $heading-sizes);
@@ -21,7 +21,7 @@
 .a-heading-2 {
   @include font-size('sm', $heading-sizes);
   @include line-height('sm', $heading-lh-sizes);
-  @include font-weight('lg', $font-weights);
+  @include font-weight('xlg', $font-weights);
 
 
 
@@ -35,6 +35,6 @@
 .a-heading-3 {
   @include font-size('xsm', $heading-sizes);
   @include line-height('xsm', $heading-lh-sizes);
-  @include font-weight('lg', $font-weights);
+  @include font-weight('xlg', $font-weights);
 
 }

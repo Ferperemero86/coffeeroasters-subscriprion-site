@@ -1,4 +1,13 @@
 .a-link-primary {
   @extend .a-link;
-  @include color('second');
+  @include color('seventh');
+  @include font-weight('lg', $font-weights);
+
+
+  &:hover {
+
+    @include color('fourth');
+    @include transition('color', 1s);
+  }
+
 }
