@@ -1,5 +1,27 @@
 .m-text-block-primary {
   @extend .m-text-block;
+  text-align: center;
 
+
+  @include breakpoint-up('md') {
+    text-align: left;
+  }
+  
 }
+
+
+.m-text-block-primary-heading {
+
+  margin-bottom: 1.5rem;
+
+
+  @include breakpoint-up('lg') {
+    margin-bottom: 2rem;
+  }
+  
+}
+
+
+
+
   

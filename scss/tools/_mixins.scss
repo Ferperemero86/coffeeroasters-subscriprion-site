@@ -12,6 +12,15 @@
 }
 
 
+//// BORDERS ////
+
+// Border radius
+@mixin b-radius($r) {
+  -moz-border-radius: $r;
+  -webkit-border-radius: $r;
+  border-radius: $r;
+}
+
 //// BG IMAGES ////
 
 // Fluid bg
@@ -111,4 +120,9 @@
 @mixin padding-y($size) {
   padding-top: $size;
   padding-bottom: $size;
+}
+
+@mixin margin-y($size) {
+  margin-top: $size;
+  margin-bottom: $size;
 }
