@@ -1,0 +1,12 @@
+.a-btn-primary {
+  @extend .a-btn;
+  padding: 1.3rem 1.1rem;
+  @include color('second');
+  @include bg-color('primary');
+
+
+  &:hover {
+    @include bg-color('primary-light');
+  }
+
+}

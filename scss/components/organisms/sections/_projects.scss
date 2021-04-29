@@ -1,0 +1,85 @@
+.o-projects {
+  position: relative;
+
+
+  @include breakpoint-up('md') {
+    height: 30rem;
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  
+}
+
+
+.o-projects-header {
+  position: relative;
+  width: 100%;
+  height: 30rem;
+  overflow: hidden;
+  @include bg-color('primary');
+
+  .header-title {
+    position: absolute;
+    bottom: 6rem;
+    right: 3rem;
+  }
+
+
+  @include breakpoint-up('md') {
+    width: 50%;
+    background: none;  
+  }
+
+}
+
+
+.o-projects-body {
+  width: 100%;
+  @include bg-color('primary');
+  @include padding-y(4rem);
+
+
+  .body-content {
+    position: relative;
+
+    &-icon {
+      display: none;
+
+
+      @include breakpoint-up('md') {
+        display: block;
+        position: absolute;
+        right: -2rem;
+      }
+
+      @include breakpoint-up('lg') {
+        right: -4rem;
+      }
+    
+    }
+
+    &-btn {
+
+      margin-top: 2rem;
+    }
+
+
+    @include breakpoint-up('md') {
+      position: relative;
+      transform: translateY(-50%);
+      top: 50%;
+    }
+  
+  }
+  
+
+  @include breakpoint-up('md') {
+    position: absolute;
+    left: 0;
+    width: 55%;
+    height: 70%; 
+    @include padding-y(0rem);
+    padding-right: 1rem;
+  }
+
+}

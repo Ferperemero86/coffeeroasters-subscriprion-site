@@ -1,0 +1,124 @@
+// Globals //
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @include font-family('primary');
+  @include color('primary-2');
+  font-size: 100%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  @include color('primary-2');
+}
+
+.wrapper {
+  max-width: 125rem;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.container {
+  width: 100%;
+  @include padding-x('sm');
+  
+  
+  @include breakpoint-up('md') {
+    @include padding-x('md');
+  }
+  
+  @include breakpoint-up('lg') {
+    @include padding-x('lg');
+  }
+    
+  
+}
+
+// Images //
+
+.img-responsive {
+
+  .sm-img {
+  
+  
+    @include breakpoint-up('md') {
+      display: none;
+    }
+
+  }
+
+  .md-img {
+    display: none;
+
+
+    @include breakpoint-up('md') {
+      display: inline-block;
+    }
+
+    @include breakpoint-up('lg') {
+      display: none;
+    }
+
+  }
+
+  .lg-img {
+    display: none;
+
+
+    @include breakpoint-up('lg') {
+      display: inline-block;
+    }
+
+  }
+  
+}
+
+.img-fluid {
+  width: 100%;
+  height: auto;
+}
+
+.slide-out-left {
+  visibility: hidden;
+  margin-left: 100%;
+}
+
+.slide-in {
+  margin-left: 0rem;
+  transition: margin-left 0.3s ease-in-out;
+}
+
+
+// Visibility //
+
+.hidden {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+.slide-up {
+  margin-top: -500px;
+  @include transition('margin-top', 1s);
+}
+
+.slide-down {
+  margin-top: 21.5rem;
+  @include transition('opacity', 1s);
+}
+
+
+
+
+

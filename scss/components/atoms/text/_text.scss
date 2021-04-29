@@ -1,0 +1,13 @@
+.a-text {
+  display: inline-block;
+  @include font-size('sm', $par-sizes);
+  @include line-height('sm', $par-lh-sizes);
+  @include font-weight('md', $font-weights);
+
+
+  @include breakpoint-up('md') {
+    @include font-size('md', $par-sizes);
+    @include line-height('md', $par-lh-sizes);
+  }
+
+}

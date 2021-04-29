@@ -1,0 +1,8 @@
+.a-character-icon {
+  display: inline-block;
+  width: 3rem;
+
+  @include breakpoint-up('lg') {
+    width: 8rem;
+  }
+}

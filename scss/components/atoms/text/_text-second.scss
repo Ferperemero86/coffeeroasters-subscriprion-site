@@ -1,0 +1,4 @@
+.a-text-second {
+  @extend .a-text;
+  @include color('second');
+}

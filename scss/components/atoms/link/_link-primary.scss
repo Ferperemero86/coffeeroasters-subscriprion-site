@@ -1,0 +1,4 @@
+.a-link-primary {
+  @extend .a-link;
+  @include color('second');
+}

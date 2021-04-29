@@ -1,0 +1,16 @@
+.a-btn {
+  text-align: center;
+  border: 0;
+
+  &:hover {
+    
+    cursor: pointer;
+    @include transition(background-color, 1s);
+  }
+
+  &:focus {
+
+    outline: none;
+  }
+
+}

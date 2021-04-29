@@ -1,0 +1,62 @@
+.m-card-primary {
+  @extend .m-card;
+  @include bg-color('primary');
+  @include color('second');
+
+
+  @include breakpoint-up('md') {
+    display: grid;
+    grid-template-columns: 51% 49%;
+  }
+
+}
+
+
+.m-card-primary-header {
+ 
+  .md-img, .lg-img {
+
+    width: 100%;
+  }
+
+}
+
+
+.m-card-primary-body {
+  position: relative;
+  @include padding-y(4.5rem);
+
+    .card-icon {
+
+      position: absolute;
+      top: -1rem;
+
+
+      @include breakpoint-up('md') {
+        top: 10rem;
+        left: -1rem;
+      }
+
+      @include breakpoint-up('lg') {
+        left: -3rem;
+      }
+
+    }
+
+    .a-btn-third {
+
+      margin-top: 2.5rem;
+    }
+
+
+    @include breakpoint-up('md') {
+      @include padding-y(7.5rem);
+    }
+
+    @include breakpoint-up('lg') {
+      @include padding-y(12.5rem);
+    }
+
+}
+
+

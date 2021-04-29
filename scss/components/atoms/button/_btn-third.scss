@@ -1,0 +1,14 @@
+.a-btn-third {
+  @extend .a-btn;
+  padding: 0;
+  @include bg-color('primary');
+  @include color('third');
+
+  &:hover {
+
+    opacity: 1;
+    @include color('third-light');
+    @include transition(color, 1s);
+  } 
+
+}

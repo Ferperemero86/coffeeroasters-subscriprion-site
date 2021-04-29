@@ -1,0 +1,12 @@
+.a-btn-second {
+ @extend .a-btn-primary;
+ @include bg-color('third');
+
+  &:hover {
+
+    @include bg-color('third');
+    opacity: 0.7;
+    @include transition(opacity, 1s);
+  }
+
+}

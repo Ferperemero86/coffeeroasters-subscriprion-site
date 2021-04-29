@@ -1,0 +1,10 @@
+.a-link {
+  @include color('primary');
+  @include font-size('sm', $par-sizes);
+
+  
+   @include breakpoint-up('lg') {
+    @include font-size('md', $par-sizes);
+  }
+  
+}

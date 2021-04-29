@@ -1,0 +1,14 @@
+.a-heading-1-second {
+  @extend .a-heading-1;
+  @include color('second');
+} 
+
+.a-heading-2-second {
+  @extend .a-heading-2;
+  @include color('second');
+}
+
+.a-heading-3-second {
+  @extend .a-heading-3;
+  @include color('second');
+}

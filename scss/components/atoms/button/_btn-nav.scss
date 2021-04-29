@@ -1,0 +1,54 @@
+.a-btn-nav {
+  @extend .a-btn;
+  display: inline-block;
+}
+
+
+.a-btn-nav-circle {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border: 1px solid;
+  border-radius: 50%;
+  @include color('third');
+
+
+  &:first-child {
+
+    margin-right: 1rem;
+
+    &::before {
+
+      content: '';
+      position: absolute;
+      border: 1px solid;
+      border-width: 0 3px 3px 0;
+      display: inline-block;
+      padding: 3px;
+      transform: rotate(135deg) translate(-50%, -50%);
+      top: 45%;
+      left: 35%;
+
+    }
+
+  }
+
+  &:last-child {
+
+    &::before {
+
+      content: '';
+      position: absolute;
+      border: 1px solid;
+      border-width: 0 3px 3px 0;
+      display: inline-block;
+      padding: 3px;
+      transform: rotate(-45deg) translate(-50%, -50%);
+      top: 45%;
+      left: 50%;
+    }
+
+  }
+
+}

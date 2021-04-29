@@ -1,0 +1,36 @@
+.o-footer-primary {
+  @extend .o-footer;
+  @include padding-y(6rem);
+
+
+  @include breakpoint-up('md') {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @include padding-y(4rem);
+  }
+
+  @include breakpoint-up('lg') {
+    @include padding-y(7.5rem);
+  }
+
+}
+
+
+.o-footer-primary-heading {
+
+
+  @include breakpoint-up('md') {
+    width: 80%;
+  }
+}
+
+
+.o-footer-primary-btn {
+  margin-top: 3rem;
+
+
+  @include breakpoint-up('md') {
+    margin-top: 0rem;
+  }
+}

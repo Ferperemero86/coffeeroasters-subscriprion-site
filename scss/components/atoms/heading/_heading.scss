@@ -1,0 +1,40 @@
+
+
+
+.a-heading-1 {
+  @include font-size('sm', $heading-sizes);
+  @include line-height('sm', $heading-lh-sizes);
+  @include font-weight('lg', $font-weights);
+
+  @include breakpoint-up('md') {
+    @include font-size('lg', $heading-sizes);
+    @include line-height('lg', $heading-lh-sizes);
+  }
+
+  @include breakpoint-up('lg') {
+    @include font-size('xlg', $heading-sizes);
+    @include line-height('xlg', $heading-lh-sizes);
+  }
+
+}
+
+.a-heading-2 {
+  @include font-size('sm', $heading-sizes);
+  @include line-height('sm', $heading-lh-sizes);
+  @include font-weight('lg', $font-weights);
+
+
+
+  @include breakpoint-up('md') {
+    @include font-size('md', $heading-sizes);
+    @include line-height('md', $heading-lh-sizes);
+  }
+
+}
+
+.a-heading-3 {
+  @include font-size('xsm', $heading-sizes);
+  @include line-height('xsm', $heading-lh-sizes);
+  @include font-weight('lg', $font-weights);
+
+}
