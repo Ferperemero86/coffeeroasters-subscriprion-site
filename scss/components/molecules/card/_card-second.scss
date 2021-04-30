@@ -1,0 +1,51 @@
+.m-card-second {
+  @extend .m-card;
+  height: 23.875rem;
+  width: 100%;
+  padding-top: 4.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  @include bg-color('third');
+  @include b-radius(0.5rem);
+
+
+  @include breakpoint-up('md') {
+    width: 70%;
+    height: auto;
+    margin-left: 15%;
+    margin-right: 15%;
+    height: 11.25rem;
+    padding-top: 0rem;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+  }
+
+  @include breakpoint-up('lg') {
+    display: block;
+    height: 23.875rem;
+    padding-top: 2.5rem;
+  }
+
+}
+
+
+.m-card-second-header {
+  text-align: center;
+  margin-bottom: 3.5rem;
+
+  @include breakpoint-up('md') {
+    margin-bottom: 0;
+  }
+
+  @include breakpoint-up('lg') {
+    margin-bottom: 3.5rem;
+  }
+
+}
+
+
+.m-card-second-body {
+  @include color('second');
+
+}

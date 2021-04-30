@@ -1,0 +1,92 @@
+.o-qualities {
+  height: 56.375rem;
+  @include b-radius(0.5rem);
+}
+
+
+.o-qualities-header {
+  position: relative;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  @include b-radius-top(0.5rem);
+
+  &::before {
+
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    @include bg-color('eight');
+    z-index: -2;
+    @include b-radius-top(0.5rem);
+  }
+
+  &::after {
+
+    @extend ::before;
+    background: url('https://res.cloudinary.com/dby4kdmbv/image/upload/v1616844086/coffeeroasters/kfetn9ybdnvlmdr7jomz.png') no-repeat center/cover;
+    @include b-radius-top(0.5rem);
+  }
+
+}
+
+
+.o-qualities-content {
+  position: relative;
+  padding-top: 2rem;
+  height: 37.5rem;
+
+  &-cards {
+
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+
+
+    @include breakpoint-up('md') {
+      top: 10rem;
+    }
+
+  }
+  
+
+  &::before {
+
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    @include bg-color('eight');
+    z-index: -2;
+    @include b-radius-bottom(0.5rem);
+  }
+
+  &::after {
+
+    @extend ::before;
+    display: none;
+    background: url('https://res.cloudinary.com/dby4kdmbv/image/upload/v1616844086/coffeeroasters/kfetn9ybdnvlmdr7jomz.png') no-repeat center/cover;
+    @include b-radius-bottom(0.5rem);
+
+    @include breakpoint-up('md') {
+      display: block;
+    }
+
+  }
+
+
+  @include breakpoint-up('md') {
+    height: 28.6rem;
+  }
+
+  @include breakpoint-up('lg') {
+    height: 24.04rem;
+  }
+
+}
+
+

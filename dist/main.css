@@ -553,7 +553,7 @@ a {
   margin-right: 1rem;
 }
 
-.a-btn-nav-circle:first-child::before {
+.a-btn-nav-circle:first-child::before, .a-btn-nav-circle.o-qualities-header:first-child::after, .a-btn-nav-circle.o-qualities-content:first-child::after {
   content: '';
   position: absolute;
   border: 1px solid;
@@ -566,7 +566,7 @@ a {
   left: 35%;
 }
 
-.a-btn-nav-circle:last-child::before {
+.a-btn-nav-circle:last-child::before, .a-btn-nav-circle.o-qualities-header:last-child::after, .a-btn-nav-circle.o-qualities-content:last-child::after {
   content: '';
   position: absolute;
   border: 1px solid;
@@ -759,8 +759,13 @@ a {
   width: 15.75rem;
 }
 
+.a-img-second {
+  width: 4.5rem;
+  height: 4.5rem;
+}
+
 .m-text-block, .m-text-block-primary, .m-text-block-second, .m-text-block-third {
-  display: inline-block;
+  display: block;
 }
 
 .m-text-block-primary {
@@ -809,6 +814,20 @@ a {
   }
 }
 
+.m-text-block-third {
+  text-align: center;
+}
+
+.m-text-block-third-heading {
+  margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 62rem) {
+  .m-text-block-third-heading {
+    margin-bottom: 2rem;
+  }
+}
+
 .m-text-blocks, .m-text-blocks-primary {
   width: 100%;
 }
@@ -817,8 +836,8 @@ a {
   margin-top: 2.5rem;
 }
 
-.m-card, .m-card-primary {
-  display: inline-block;
+.m-card, .m-card-primary, .m-card-second {
+  display: block;
 }
 
 .m-card-primary {
@@ -863,6 +882,63 @@ a {
     width: 100%;
     margin: 0;
   }
+}
+
+.m-card-second {
+  height: 23.875rem;
+  width: 100%;
+  padding-top: 4.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background-color: #0e8684;
+  border-radius: 0.5rem;
+}
+
+@media screen and (min-width: 62rem) {
+  .m-card-second {
+    width: 70%;
+    height: auto;
+    margin-left: 15%;
+    margin-right: 15%;
+    height: 11.25rem;
+    padding-top: 0rem;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 2fr;
+        grid-template-columns: 1fr 2fr;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (min-width: 90rem) {
+  .m-card-second {
+    display: block;
+    height: 23.875rem;
+    padding-top: 2.5rem;
+  }
+}
+
+.m-card-second-header {
+  text-align: center;
+  margin-bottom: 3.5rem;
+}
+
+@media screen and (min-width: 62rem) {
+  .m-card-second-header {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: 90rem) {
+  .m-card-second-header {
+    margin-bottom: 3.5rem;
+  }
+}
+
+.m-card-second-body {
+  color: white;
 }
 
 .m-menu, .m-menu-primary {
@@ -918,6 +994,25 @@ a {
 @media screen and (min-width: 62rem) {
   .m-cards-primary-card {
     margin-top: 1.5rem;
+  }
+}
+
+.m-cards-second-card:not(:first-child) {
+  margin-top: 1.5rem;
+}
+
+@media screen and (min-width: 90rem) {
+  .m-cards-second-card:not(:first-child) {
+    margin-top: 0rem;
+  }
+}
+
+@media screen and (min-width: 90rem) {
+  .m-cards-second {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -1036,116 +1131,87 @@ a {
   }
 }
 
-.o-approach {
-  width: 100%;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-  position: relative;
+.o-qualities {
+  height: 56.375rem;
+  border-radius: 0.5rem;
 }
 
-.o-approach::after, .o-approach::before {
+.o-qualities-header {
+  position: relative;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  border-radius: 0.5rem 0.5rem 0rem 0rem;
+}
+
+.o-qualities-header::before, .o-qualities-header::after {
   content: '';
+  position: absolute;
   width: 100%;
   height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #2c343e;
+  z-index: -2;
+  border-radius: 0.5rem 0.5rem 0rem 0rem;
+}
+
+.o-qualities-header::after {
+  background: url("https://res.cloudinary.com/dby4kdmbv/image/upload/v1616844086/coffeeroasters/kfetn9ybdnvlmdr7jomz.png") no-repeat center/cover;
+  border-radius: 0.5rem 0.5rem 0rem 0rem;
+}
+
+.o-qualities-content {
+  position: relative;
+  padding-top: 2rem;
+  height: 37.5rem;
+}
+
+.o-qualities-content-cards {
   position: absolute;
-  right: 0;
-  top: 0;
-  z-index: -1;
-  background-color: #0e8684;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  left: 50%;
 }
 
 @media screen and (min-width: 62rem) {
-  .o-approach::after, .o-approach::before {
-    width: 55%;
-    top: -8rem;
-    z-index: 2;
+  .o-qualities-content-cards {
+    top: 10rem;
   }
 }
 
-@media screen and (min-width: 90rem) {
-  .o-approach::after, .o-approach::before {
-    width: 70%;
-  }
-}
-
-.o-approach::before {
+.o-qualities-content::before, .o-qualities-content::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
   top: 0;
+  left: 0;
+  background-color: #2c343e;
+  z-index: -2;
+  border-radius: 0rem 0rem 0.5rem 0.5rem;
 }
 
-@media screen and (min-width: 62rem) {
-  .o-approach {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 45% 55%;
-        grid-template-columns: 45% 55%;
-    -webkit-column-gap: 2rem;
-            column-gap: 2rem;
-    padding-top: 7.5rem;
-    padding-bottom: 7.5rem;
-  }
-}
-
-@media screen and (min-width: 90rem) {
-  .o-approach {
-    padding-top: 12.5rem;
-    padding-bottom: 12.5rem;
-  }
-}
-
-.o-approach-heading .a-heading-2, .o-approach-heading .a-heading-2-second {
+.o-qualities-content::after {
   display: none;
+  background: url("https://res.cloudinary.com/dby4kdmbv/image/upload/v1616844086/coffeeroasters/kfetn9ybdnvlmdr7jomz.png") no-repeat center/cover;
+  border-radius: 0rem 0rem 0.5rem 0.5rem;
 }
 
 @media screen and (min-width: 62rem) {
-  .o-approach-heading .a-heading-2, .o-approach-heading .a-heading-2-second {
+  .o-qualities-content::after {
     display: block;
   }
 }
 
-.o-approach-heading .a-heading-2-second {
-  display: block;
-  margin-bottom: 3rem;
-}
-
 @media screen and (min-width: 62rem) {
-  .o-approach-heading .a-heading-2-second {
-    display: none;
+  .o-qualities-content {
+    height: 28.6rem;
   }
-}
-
-@media screen and (min-width: 62rem) {
-  .o-approach-heading {
-    z-index: 3;
-  }
-}
-
-.o-approach-content {
-  z-index: 3;
-}
-
-.o-approach-content-block {
-  position: relative;
-}
-
-.o-approach-content-block:not(:first-child) {
-  margin-top: 3.5rem;
 }
 
 @media screen and (min-width: 90rem) {
-  .o-approach-content-block:not(:first-child) {
-    margin-top: 5rem;
-  }
-}
-
-.o-approach-content-block .heading-second {
-  position: absolute;
-  top: -2rem;
-}
-
-@media screen and (min-width: 62rem) {
-  .o-approach-content {
-    position: relative;
-    top: -5rem;
+  .o-qualities-content {
+    height: 24.04rem;
   }
 }
 

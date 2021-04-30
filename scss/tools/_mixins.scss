@@ -21,6 +21,19 @@
   border-radius: $r;
 }
 
+@mixin b-radius-top($r) {
+  -moz-border-radius: $r $r 0rem 0rem;
+  -webkit-border-radius: $r $r 0rem 0rem;
+  border-radius: $r $r 0rem 0rem;
+}
+
+@mixin b-radius-bottom($r) {
+  -moz-border-radius: 0rem 0rem $r $r;
+  -webkit-border-radius:  0rem 0rem $r $r;
+  border-radius:  0rem 0rem $r $r;
+}
+
+
 //// BG IMAGES ////
 
 // Fluid bg

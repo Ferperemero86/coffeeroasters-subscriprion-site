@@ -1,3 +1,15 @@
 .m-text-block-third {
   @extend .m-text-block;
+  text-align: center;
+}
+
+
+.m-text-block-third-heading {
+  margin-bottom: 1rem;
+
+
+  @include breakpoint-up('md') {
+    margin-bottom: 2rem;
+  }
+  
 }
