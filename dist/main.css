@@ -617,39 +617,45 @@ a {
   color: white;
 }
 
-.a-heading-1, .a-heading-1-second {
+.a-text-third {
+  color: #f9d6bd;
+  font-size: 4rem;
+  font-weight: 900;
+}
+
+.a-heading-1, .a-heading-1-second, .a-heading-1-fourth {
   font-size: 2rem;
   line-height: 2.5rem;
   font-weight: 900;
 }
 
 @media screen and (min-width: 62rem) {
-  .a-heading-1, .a-heading-1-second {
+  .a-heading-1, .a-heading-1-second, .a-heading-1-fourth {
     font-size: 3rem;
     line-height: 4rem;
   }
 }
 
 @media screen and (min-width: 90rem) {
-  .a-heading-1, .a-heading-1-second {
+  .a-heading-1, .a-heading-1-second, .a-heading-1-fourth {
     font-size: 4rem;
   }
 }
 
-.a-heading-2, .a-heading-2-second {
+.a-heading-2, .a-heading-2-second, .a-heading-2-fourth {
   font-size: 2rem;
   line-height: 2.5rem;
   font-weight: 900;
 }
 
 @media screen and (min-width: 62rem) {
-  .a-heading-2, .a-heading-2-second {
+  .a-heading-2, .a-heading-2-second, .a-heading-2-fourth {
     font-size: 2.5rem;
     line-height: 3.5rem;
   }
 }
 
-.a-heading-3, .a-heading-3-second {
+.a-heading-3, .a-heading-3-second, .a-heading-3-fourth {
   font-size: 1.125rem;
   line-height: 1.75rem;
   font-weight: 900;
@@ -692,6 +698,18 @@ a {
   .a-large-heading {
     font-size: 9.375rem;
   }
+}
+
+.a-heading-1-fourth {
+  color: #848990;
+}
+
+.a-heading-2-fourth {
+  color: #848990;
+}
+
+.a-heading-3-fourth {
+  color: #848990;
 }
 
 .a-link, .a-link-primary {
@@ -836,7 +854,7 @@ a {
   margin-top: 2.5rem;
 }
 
-.m-card, .m-card-primary, .m-card-second {
+.m-card, .m-card-primary, .m-card-second, .m-card-third {
   display: block;
 }
 
@@ -941,6 +959,22 @@ a {
   color: white;
 }
 
+.m-card-third {
+  padding: 0 1rem;
+}
+
+.m-card-third-header {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+@media screen and (min-width: 62rem) {
+  .m-card-third-header {
+    text-align: left;
+  }
+}
+
 .m-menu, .m-menu-primary {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1016,8 +1050,53 @@ a {
   }
 }
 
+@media screen and (min-width: 62rem) {
+  .m-cards-third {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.m-cards-third-card:not(:first-child) {
+  margin-top: 3.5rem;
+}
+
+@media screen and (min-width: 62rem) {
+  .m-cards-third-card:not(:first-child) {
+    margin-top: 0;
+  }
+}
+
 .m-slider {
   width: 100%;
+}
+
+.m-steps-points {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.m-steps-points-line {
+  display: inline-block;
+  width: 48%;
+  border: 3px solid;
+  border-color: #f9d6bd;
+}
+
+.m-steps-points-circle {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  border: 2px solid;
+  border-color: #0e8684;
+  border-radius: 100%;
 }
 
 .o-header, .o-header-primary {
@@ -1114,26 +1193,53 @@ a {
   text-align: center;
 }
 
-.o-design .color {
-  color: #0e8684;
+.o-guide-primary {
+  text-align: center;
 }
 
 @media screen and (min-width: 62rem) {
-  .o-design {
-    height: 41.125rem;
-    overflow: hidden;
+  .o-guide-primary {
+    text-align: left;
+  }
+}
+
+.o-guide-primary-header {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.o-guide-primary-header .steps-points {
+  display: none;
+}
+
+@media screen and (min-width: 62rem) {
+  .o-guide-primary-header .steps-points {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 3.5rem 0;
+  }
+}
+
+.o-guide-primary-btn {
+  margin-top: 6rem;
+}
+
+.o-qualities {
+  height: 95.75rem;
+  border-radius: 0.5rem;
+}
+
+@media screen and (min-width: 62rem) {
+  .o-qualities {
+    height: 65rem;
   }
 }
 
 @media screen and (min-width: 90rem) {
-  .o-design {
-    height: 61.5rem;
+  .o-qualities {
+    height: 52rem;
   }
-}
-
-.o-qualities {
-  height: 56.375rem;
-  border-radius: 0.5rem;
 }
 
 .o-qualities-header {
@@ -1158,6 +1264,12 @@ a {
 .o-qualities-header::after {
   background: url("https://res.cloudinary.com/dby4kdmbv/image/upload/v1616844086/coffeeroasters/kfetn9ybdnvlmdr7jomz.png") no-repeat center/cover;
   border-radius: 0.5rem 0.5rem 0rem 0rem;
+}
+
+@media screen and (min-width: 62rem) {
+  .o-qualities-header::after {
+    display: none;
+  }
 }
 
 .o-qualities-content {

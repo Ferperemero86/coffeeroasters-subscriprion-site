@@ -1,6 +1,16 @@
 .o-qualities {
-  height: 56.375rem;
+  height: 95.75rem;
   @include b-radius(0.5rem);
+ 
+
+  @include breakpoint-up('md') {
+    height: 65rem;
+  }
+
+  @include breakpoint-up('lg') {
+    height: 52rem;
+  }
+
 }
 
 
@@ -28,6 +38,11 @@
     @extend ::before;
     background: url('https://res.cloudinary.com/dby4kdmbv/image/upload/v1616844086/coffeeroasters/kfetn9ybdnvlmdr7jomz.png') no-repeat center/cover;
     @include b-radius-top(0.5rem);
+
+
+    @include breakpoint-up('md') {
+      display: none;
+    }
   }
 
 }

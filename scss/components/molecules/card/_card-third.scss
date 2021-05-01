@@ -1,0 +1,18 @@
+.m-card-third {
+  @extend .m-card;
+  padding: 0 1rem;
+}
+
+
+.m-card-third-header {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 1.5rem;
+
+
+  @include breakpoint-up('md') {
+    text-align: left;
+  }
+
+}
+

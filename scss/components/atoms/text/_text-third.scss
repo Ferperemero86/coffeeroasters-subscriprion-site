@@ -1,0 +1,5 @@
+.a-text-third {
+  @include color('fifth');
+  @include font-size('xlg', $heading-sizes);
+  @include font-weight('xlg', $font-weights);
+}

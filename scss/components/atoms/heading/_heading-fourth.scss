@@ -1,0 +1,15 @@
+.a-heading-1-fourth {
+  @extend .a-heading-1;
+  @include color('seventh');
+} 
+  
+.a-heading-2-fourth {
+  @extend .a-heading-2;
+  @include color('seventh');
+}
+  
+.a-heading-3-fourth {
+  @extend .a-heading-3;
+  @include color('seventh');
+}
+

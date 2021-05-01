@@ -1,0 +1,24 @@
+.m-steps-points {
+  width: 70%;
+  display: flex;
+  align-items: center;
+}
+
+
+.m-steps-points-line {
+  display: inline-block;
+  width: 48%;
+  border: 3px solid;
+  @include b-color('fifth');
+}
+
+
+.m-steps-points-circle {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  border: 2px solid;
+  @include b-color('third');
+  @include b-radius(100%);
+}
+

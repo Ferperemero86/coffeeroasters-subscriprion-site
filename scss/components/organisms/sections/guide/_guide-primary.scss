@@ -1,0 +1,35 @@
+.o-guide-primary {
+  text-align: center;
+
+
+  @include breakpoint-up('md') {
+    text-align: left;
+  }
+
+  @include breakpoint-up('lg') {
+    //width: 70%;
+  }
+
+}
+
+
+.o-guide-primary-header {
+  text-align: center;
+  margin-bottom: 5rem;
+
+  .steps-points {
+    display: none;
+
+    @include breakpoint-up('md') {
+      display: flex;
+      margin: 3.5rem 0;
+    }
+
+  }
+
+}
+
+
+.o-guide-primary-btn {
+  margin-top: 6rem;
+}

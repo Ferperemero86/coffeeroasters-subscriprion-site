@@ -1,0 +1,26 @@
+.m-cards-third {
+
+
+  @include breakpoint-up('md') {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    //column-gap: 1rem;
+  }
+
+}
+
+
+.m-cards-third-card {
+
+  &:not(:first-child) {
+
+    margin-top: 3.5rem;
+
+
+    @include breakpoint-up('md') {
+      margin-top: 0;
+    }
+
+  }
+
+}
