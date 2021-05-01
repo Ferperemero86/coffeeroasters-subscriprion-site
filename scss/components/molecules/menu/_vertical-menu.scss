@@ -1,23 +1,15 @@
 .m-vertical-menu {
-  width: 15rem;
-  padding: 2rem 0;
   text-align: center;
-  @include bg-color('primary');
 
-  .link {
+  &-link {
 
     display: block;
 
     &:not(:first-child) {
 
-      margin-top: 1rem;
+      margin-top: 1.5rem;
     }
-   
-  }
 
-  .btn {
-
-    margin-top: 1rem;
   }
 
 }

@@ -1,0 +1,35 @@
+.m-menu-second {
+  text-align: center;
+}
+
+
+.m-menu-second-link {
+  display: block;
+
+  &:not(:first-child) {
+
+    margin-top: 1.5rem;
+
+
+    @include breakpoint-up('md') {
+      margin-top: 0;
+    }
+
+  }
+
+  &:not(:last-child) {
+
+
+    @include breakpoint-up('md') {
+      margin-right: 1rem;
+    }
+    
+  }
+
+
+  @include breakpoint-up('md') {
+    display: inline-block;
+  }
+
+  
+}

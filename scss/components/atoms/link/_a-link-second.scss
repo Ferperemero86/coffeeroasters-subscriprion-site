@@ -1,0 +1,4 @@
+.a-link-second {
+  @extend .a-link;
+  @include color('seventh');
+}
