@@ -1,0 +1,14 @@
+.a-heading-1-fifth {
+  @extend .a-heading-1;
+  @include color('fourth');
+} 
+  
+.a-heading-2-fifth {
+  @extend .a-heading-2;
+  @include color('fourth');
+}
+  
+.a-heading-3-fifth {
+  @extend .a-heading-3;
+  @include color('fourth');
+}

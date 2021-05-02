@@ -1,5 +1,5 @@
 .a-text {
-  display: inline-block;
+  display: block;
   @include font-size('sm', $par-sizes);
   @include line-height('sm', $par-lh-sizes);
   @include font-weight('md', $font-weights);

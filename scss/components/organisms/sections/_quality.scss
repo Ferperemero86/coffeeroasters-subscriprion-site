@@ -1,0 +1,39 @@
+.o-quality {
+  position: relative;
+  padding-top: 9rem;
+  padding-bottom: 3.75rem;
+  @include bg-color('ninth');
+  @include b-radius(0.5rem);
+
+
+  @include breakpoint-up('md') {
+    padding-top: 12rem;
+  }
+
+  @include breakpoint-up('lg') {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+} 
+
+
+.o-quality-header {
+  width: 17rem;
+  position: absolute;
+  top: -3rem;
+  transform: translateX(-50%);
+  left: 50%;
+
+
+  @include breakpoint-up('md') {
+    width: 35rem;
+    top: -9rem;
+  }
+
+  @include breakpoint-up('lg') {
+   transform: none;
+   margin-left: 3rem;
+  }
+
+}

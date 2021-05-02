@@ -1,0 +1,4 @@
+.a-text-fourth {
+  @extend .a-text;
+  @include color('fourth');
+}

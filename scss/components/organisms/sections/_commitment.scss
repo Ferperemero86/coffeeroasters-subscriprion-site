@@ -1,0 +1,29 @@
+.o-commitment {
+
+
+  @include breakpoint-up('md') {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 4rem;
+  }
+
+  @include breakpoint-up('lg') {
+    align-content: center;
+  }
+}
+
+
+.o-commitment-header {
+  margin-bottom: 3rem;
+
+
+  @include breakpoint-up('md') {
+    height: 35rem;
+  }
+
+}
+
+

@@ -1,0 +1,17 @@
+.m-text-block-fourth {
+  @extend .m-text-block;
+  text-align: center;
+
+
+  @include breakpoint-up('lg') {
+    text-align: left;
+  }
+  
+}
+
+
+.m-text-block-fourth-heading {
+  margin-bottom: 2rem;
+  
+}
+
