@@ -1516,6 +1516,12 @@ a {
   text-align: center;
 }
 
+@media screen and (min-width: 62rem) {
+  .o-headquarters {
+    text-align: left;
+  }
+}
+
 .o-headquarters-heading {
   margin-bottom: 3rem;
 }
