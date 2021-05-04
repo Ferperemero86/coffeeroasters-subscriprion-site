@@ -22,4 +22,14 @@
 
   }
 
+  &:first-child {
+
+
+    @include breakpoint-up('md') {
+
+      padding-left: 0rem;
+    }
+
+  }
+
 }

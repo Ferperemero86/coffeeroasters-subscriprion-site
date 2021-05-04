@@ -1,0 +1,43 @@
+.o-guide {
+  text-align: center;
+  @include padding-y(2.5rem);
+  @include b-radius(0.625rem);
+
+
+  @include breakpoint-up('md') {
+    text-align: left;
+  }
+
+}
+
+
+.o-guide-header {
+  text-align: center;
+  
+  .heading {
+
+    margin-bottom: 3.5rem;
+  }
+
+  .steps-points {
+
+    display: none;
+
+    @include breakpoint-up('md') {
+      display: flex;
+      margin-bottom: 3.5rem;
+    }
+
+  }
+
+
+  @include breakpoint-up('md') {
+    text-align: left;
+  }
+
+}
+
+
+.o-guide-btn {
+  margin-top: 6rem;
+}

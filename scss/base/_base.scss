@@ -107,6 +107,13 @@ a {
 }
 
 
+// Colors //
+
+/// bg
+.bg-color-eight {
+  @include bg-color('eight');
+}
+
 // Spaces //
 
 .margin-top {

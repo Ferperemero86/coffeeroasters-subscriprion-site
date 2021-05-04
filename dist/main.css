@@ -440,6 +440,10 @@ a {
   transition: margin-left 0.3s ease-in-out;
 }
 
+.bg-color-eight {
+  background-color: #2c343e;
+}
+
 .margin-top {
   margin-top: 7.5rem;
 }
@@ -1130,6 +1134,12 @@ a {
   }
 }
 
+@media screen and (min-width: 62rem) {
+  .m-cards-third-card:first-child {
+    padding-left: 0rem;
+  }
+}
+
 .m-slider {
   width: 100%;
 }
@@ -1340,35 +1350,47 @@ a {
   text-align: center;
 }
 
-.o-guide-primary {
+.o-guide {
   text-align: center;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  border-radius: 0.625rem;
 }
 
 @media screen and (min-width: 62rem) {
-  .o-guide-primary {
+  .o-guide {
     text-align: left;
   }
 }
 
-.o-guide-primary-header {
+.o-guide-header {
   text-align: center;
-  margin-bottom: 5rem;
 }
 
-.o-guide-primary-header .steps-points {
+.o-guide-header .heading {
+  margin-bottom: 3.5rem;
+}
+
+.o-guide-header .steps-points {
   display: none;
 }
 
 @media screen and (min-width: 62rem) {
-  .o-guide-primary-header .steps-points {
+  .o-guide-header .steps-points {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin: 3.5rem 0;
+    margin-bottom: 3.5rem;
   }
 }
 
-.o-guide-primary-btn {
+@media screen and (min-width: 62rem) {
+  .o-guide-header {
+    text-align: left;
+  }
+}
+
+.o-guide-btn {
   margin-top: 6rem;
 }
 
