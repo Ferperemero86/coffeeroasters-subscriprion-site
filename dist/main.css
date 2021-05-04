@@ -1160,14 +1160,14 @@ a {
   border-radius: 100%;
 }
 
-.o-header, .o-header-primary, .o-header-second {
+.o-header, .o-header-primary, .o-header-second, .o-header-third {
   width: 100%;
+  position: relative;
+  border-radius: 0.625rem;
 }
 
 .o-header-primary {
-  position: relative;
   height: 31.25rem;
-  border-radius: 0.625rem;
   background: url("https://res.cloudinary.com/dby4kdmbv/image/upload/v1616844078/coffeeroasters/cn6jejqangmyz5sgftat.jpg") no-repeat center/cover;
 }
 
@@ -1209,9 +1209,7 @@ a {
 }
 
 .o-header-second {
-  position: relative;
   height: 25rem;
-  border-radius: 0.625rem;
   background: url("https://res.cloudinary.com/dby4kdmbv/image/upload/v1616844073/coffeeroasters/sggtfefysv7hftuxfuqm.jpg") no-repeat center/cover;
 }
 
@@ -1249,6 +1247,49 @@ a {
 
 @media screen and (min-width: 90rem) {
   .o-header-second-content {
+    width: 58%;
+  }
+}
+
+.o-header-third {
+  height: 25rem;
+  background: url("https://res.cloudinary.com/dby4kdmbv/image/upload/v1616844088/coffeeroasters/xr56mdvxbx0ydb0p3yuz.jpg") no-repeat center/cover;
+}
+
+@media screen and (min-width: 62rem) {
+  .o-header-third {
+    background: url("https://res.cloudinary.com/dby4kdmbv/image/upload/v1616844086/coffeeroasters/kxwzeytk3usuvuxcciug.jpg") no-repeat center/cover;
+  }
+}
+
+@media screen and (min-width: 90rem) {
+  .o-header-third {
+    height: 28rem;
+    background: url("https://res.cloudinary.com/dby4kdmbv/image/upload/v1616844088/coffeeroasters/krtjiio3hytrj3ox2blx.jpg") no-repeat center/cover;
+  }
+}
+
+.o-header-third-content {
+  position: absolute;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  top: 50%;
+  text-align: center;
+}
+
+.o-header-third-content .content-btn {
+  margin-top: 2.5rem;
+}
+
+@media screen and (min-width: 62rem) {
+  .o-header-third-content {
+    width: 70%;
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 90rem) {
+  .o-header-third-content {
     width: 58%;
   }
 }

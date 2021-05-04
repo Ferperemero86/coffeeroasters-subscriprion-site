@@ -1,3 +1,5 @@
 .o-header {
   width: 100%;
+  position: relative;
+  @include b-radius(0.625rem);
 }

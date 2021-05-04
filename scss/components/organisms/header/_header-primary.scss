@@ -1,8 +1,6 @@
 .o-header-primary {
   @extend .o-header;
-  position: relative;
   height: 31.25rem;
-  @include b-radius(0.625rem);
   background: url('https://res.cloudinary.com/dby4kdmbv/image/upload/v1616844078/coffeeroasters/cn6jejqangmyz5sgftat.jpg') no-repeat center/cover;
 
 

@@ -1,0 +1,41 @@
+.o-header-third {
+  @extend .o-header;
+  height: 25rem;
+  background: url('https://res.cloudinary.com/dby4kdmbv/image/upload/v1616844088/coffeeroasters/xr56mdvxbx0ydb0p3yuz.jpg') no-repeat center/cover;
+
+
+  @include breakpoint-up('md') {
+    background: url('https://res.cloudinary.com/dby4kdmbv/image/upload/v1616844086/coffeeroasters/kxwzeytk3usuvuxcciug.jpg') no-repeat center/cover;
+  }
+
+  @include breakpoint-up('lg') {
+    height: 28rem;
+    background: url('https://res.cloudinary.com/dby4kdmbv/image/upload/v1616844088/coffeeroasters/krtjiio3hytrj3ox2blx.jpg') no-repeat center/cover;
+    
+  }
+
+}
+
+
+.o-header-third-content {
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  text-align: center;
+
+  .content-btn {
+
+    margin-top: 2.5rem;
+  }
+
+
+  @include breakpoint-up('md') {
+    width: 70%;
+    text-align: left;
+  }
+
+  @include breakpoint-up('lg') {
+    width: 58%;
+  }
+
+}
