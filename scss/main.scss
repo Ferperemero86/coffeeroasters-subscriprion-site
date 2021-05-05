@@ -46,11 +46,16 @@
 @import './components/atoms/img/img-primary';
 @import './components/atoms/img/img-second';
 
+@import './components/atoms/arrow/arrow';
+@import './components/atoms/arrow/arrow-right';
+@import './components/atoms/arrow/arrow-down';
+
 @import './components/molecules/text-block/text-block';
 @import './components/molecules/text-block/text-block-primary';
 @import './components/molecules/text-block/text-block-second';
 @import './components/molecules/text-block/text-block-third';
 @import './components/molecules/text-block/text-block-fourth';
+@import './components/molecules/text-block/text-block-fifth';
 
 @import './components/molecules/text-blocks/text-blocks';
 @import './components/molecules/text-blocks/text-blocks-primary';
@@ -59,6 +64,7 @@
 @import './components/molecules/card/card-primary';
 @import './components/molecules/card/card-second';
 @import './components/molecules/card/card-third';
+@import './components/molecules/card/card-fourth';
 
 @import './components/molecules/menu/menu';
 @import './components/molecules/menu/menu-primary';
@@ -87,6 +93,7 @@
 @import './components/organisms/sections/commitment';
 @import './components/organisms/sections/quality';
 @import './components/organisms/sections/headquarters';
+@import './components/organisms/sections/selection-menu';
 
 @import './components/organisms/footer/footer';
 @import './components/organisms/footer/footer-primary';

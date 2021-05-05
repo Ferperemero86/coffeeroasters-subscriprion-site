@@ -5,7 +5,14 @@
 
 
   @include breakpoint-up('md') {
+    @include padding-y(4rem);
     text-align: left;
+  }
+
+  @include breakpoint-up('lg') {
+    width: calc(100% - 10rem);
+    margin-left: auto;
+    margin-right: auto;
   }
 
 }

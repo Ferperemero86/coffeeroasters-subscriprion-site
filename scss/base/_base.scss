@@ -114,6 +114,10 @@ a {
   @include bg-color('eight');
 }
 
+.bg-color-seventh {
+  @include bg-color('seventh');
+}
+
 // Spaces //
 
 .margin-top {
@@ -130,6 +134,14 @@ a {
 
 }
 
+
+// Transform //
+
+// Rotate
+.arrow-down {
+  transform: rotate(-90deg);
+}
+
 // Visibility //
 
 .hidden {
@@ -141,13 +153,13 @@ a {
 }
 
 .slide-up {
-  margin-top: -500px;
-  @include transition('margin-top', 1s);
+  height: 0;
+  @include transition('height', 1s);
 }
 
 .slide-down {
-  margin-top: 21.5rem;
-  @include transition('opacity', 1s);
+  height: auto;
+  @include transition('height', 3s);
 }
 
 

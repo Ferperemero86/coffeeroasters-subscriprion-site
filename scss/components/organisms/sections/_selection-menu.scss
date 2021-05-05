@@ -1,0 +1,33 @@
+.o-selection-menu-field {
+  margin-top: 5rem;
+
+  .menu-field-header {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    margin-bottom: 2rem;
+  }
+
+
+  .menu-field-content {
+    overflow: hidden;
+
+    .menu-field-card {
+
+      &:hover {
+
+        cursor: pointer;
+      }
+
+    }
+  }
+
+  .card-active {
+    @include bg-color('third');
+    @include color('second');
+  }
+
+}
+

@@ -1,0 +1,15 @@
+.m-text-block-fifth {
+  @extend .m-text-block;
+  text-align: left;
+}
+
+
+.m-text-block-third-heading {
+  margin-bottom: 1rem;
+
+
+  @include breakpoint-up('md') {
+    margin-bottom: 2rem;
+  }
+  
+}

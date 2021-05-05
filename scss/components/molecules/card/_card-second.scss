@@ -6,7 +6,6 @@
   padding-left: 1rem;
   padding-right: 1rem;
   @include bg-color('third');
-  @include b-radius(0.5rem);
 
 
   @include breakpoint-up('md') {

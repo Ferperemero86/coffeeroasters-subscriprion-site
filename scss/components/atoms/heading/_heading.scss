@@ -2,6 +2,7 @@
 
 
 .a-heading-1 {
+  display: inline-block;
   @include font-size('sm', $heading-sizes);
   @include line-height('sm', $heading-lh-sizes);
   @include font-weight('xlg', $font-weights);
@@ -19,6 +20,7 @@
 }
 
 .a-heading-2 {
+  display: inline-block;
   @include font-size('sm', $heading-sizes);
   @include line-height('sm', $heading-lh-sizes);
   @include font-weight('xlg', $font-weights);
@@ -33,6 +35,7 @@
 }
 
 .a-heading-3 {
+  display: inline-block;
   @include font-size('xsm', $heading-sizes);
   @include line-height('xsm', $heading-lh-sizes);
   @include font-weight('xlg', $font-weights);

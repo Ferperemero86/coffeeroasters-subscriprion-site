@@ -1,0 +1,14 @@
+.m-card-fourth {
+  @extend .m-card;
+  display: inline-block;
+  width: 100%;
+  padding: 2rem 1rem;
+  @include bg-color('ninth');
+}
+
+
+.m-card-fourth-header {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 1.5rem;
+}
