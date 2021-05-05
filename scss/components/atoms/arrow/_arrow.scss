@@ -2,6 +2,7 @@
   display: inline-block;
   width: 25px;
   height: 25px;
-  border-top: 2px solid #000;
-  border-left: 2px solid #000;
+  border-top: 2px solid;
+  border-left: 2px solid;
+  @include b-color('third');
 } 

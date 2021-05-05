@@ -826,8 +826,9 @@ a {
   display: inline-block;
   width: 25px;
   height: 25px;
-  border-top: 2px solid #000;
-  border-left: 2px solid #000;
+  border-top: 2px solid;
+  border-left: 2px solid;
+  border-color: #0e8684;
 }
 
 .a-arrow-right {
@@ -1676,12 +1677,19 @@ a {
   margin-bottom: 2rem;
 }
 
+@media screen and (min-width: 90rem) {
+  .o-selection-menu-field .menu-field-header {
+    width: 40%;
+  }
+}
+
 .o-selection-menu-field .menu-field-content {
   overflow: hidden;
 }
 
 .o-selection-menu-field .menu-field-content .menu-field-card:hover {
   cursor: pointer;
+  background-color: #f9d6bd;
 }
 
 .o-selection-menu-field .card-active {
