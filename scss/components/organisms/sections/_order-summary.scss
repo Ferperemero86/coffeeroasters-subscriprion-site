@@ -1,0 +1,28 @@
+.o-order-summary {
+  width: 100%;
+  text-align: left;
+
+
+  @include breakpoint-up('lg') {
+    width: 40%;
+  }
+
+}
+
+
+.o-order-summary-body {
+  padding: 0 1.5rem 1.5rem 1.5rem;
+  @include b-radius(0.635rem);
+
+  .heading {
+
+    padding: 1.5rem 0;
+  }
+}
+
+
+.o-order-summary-btn {
+
+  margin-top: 2rem;
+}
+

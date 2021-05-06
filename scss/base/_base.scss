@@ -118,6 +118,15 @@ a {
   @include bg-color('seventh');
 }
 
+.bg-color-third {
+  @include bg-color('third');
+}
+
+/// Font
+.color-third {
+  @include color('third');
+}
+
 // Spaces //
 
 .margin-top {

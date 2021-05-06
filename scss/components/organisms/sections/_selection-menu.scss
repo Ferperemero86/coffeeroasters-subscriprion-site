@@ -10,7 +10,7 @@
     margin-bottom: 2rem;
 
 
-    @include breakpoint-up ('lg') {
+    @include breakpoint-up ('md') {
       width: 40%;
     }
 

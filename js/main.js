@@ -1,6 +1,14 @@
 document.addEventListener('DOMContentLoaded', function() {
 
   //// Menu selection ////
+
+  // Order Summary
+  const howEl = document.querySelector('.o-order-summary .how');
+  const typeEl = document.querySelector('.o-order-summary .type');
+  const quantityEl = document.querySelector('.o-order-summary .quantity');
+  const grindEl = document.querySelector('.o-order-summary .grind');
+  const deliveryEl = document.querySelector('.o-order-summary .delivery');
+  const orderElements = [howEl, typeEl, quantityEl, grindEl, deliveryEl];
   const selectMenu = document.querySelector('.o-selection-menu');
   const orderSumary = {
     'how': 'Capsule',
@@ -9,6 +17,8 @@ document.addEventListener('DOMContentLoaded', function() {
     'grind': 'Wholebean',
     'delivery': 'Every Week'
   };
+
+
 
   const getCardSelectedText = function (cardEl) {
     let card = cardEl;
@@ -30,7 +40,19 @@ document.addEventListener('DOMContentLoaded', function() {
 
   }
 
+  const placeOrderContent = function() {
+    orderElements.map(function(el, idx) {
+      const keys = Object.keys(orderSumary);
   
+      el.innerHTML = orderSumary[keys[idx]];
+    });
+  }
+
+  
+
+  placeOrderContent();
+
+
   // Card display
   const removeClasses = function(cards) {
 
@@ -100,10 +122,62 @@ document.addEventListener('DOMContentLoaded', function() {
         cardSelectedText = getCardSelectedText(card);
         
         addSelectionToOrder(cardSelectedText);
-        console.log(orderSumary);
+        placeOrderContent();
       }
     })
     
   }
+
+
+  //// Checkout ////
+  const orderBtn = document.querySelector('.summary-btn');
+  const checkoutBtns = document.querySelector('.o-checkout-btns');
+  const checkoutBtn = document.querySelector('.o-checkout-btns .checkout');
+  const cancelBtn = document.querySelector('.o-checkout-btns .cancel');
+  const textSuccess = document.querySelector('.text-success');
+
+  const orderSummary = document.querySelector('.o-order-summary');
+  const orderSummaryBody = document.querySelector('.o-order-summary-body');
+  const checkoutPrice = document.querySelector('.o-checkout-price');
+  const layer = document.querySelector('.layer');
+
+
+  orderBtn.addEventListener('click', function(e) {
+    console.log('click');
+    window.scrollTo(0,0);
+
+    this.classList.add('hidden');
+    checkoutBtns.classList.remove('hidden');
+    orderSummary.classList.add('o-checkout');
+    checkoutPrice.classList.remove('hidden');
+    layer.classList.add('show');
+  });
+
+
+  checkoutBtn.addEventListener('click', function(e) {
+    textSuccess.classList.remove('hidden');
+    orderSummaryBody.classList.add('hidden');
+    checkoutBtns.classList.add('hidden');
+    checkoutPrice.classList.add('hidden');
+
+    setTimeout(function() {
+      orderSummary.classList.remove('o-checkout');
+      orderBtn.classList.remove('hidden');
+      layer.classList.remove('show');
+      textSuccess.classList.add('hidden');
+      orderSummaryBody.classList.remove('hidden');
+    }, 1500)
+  })
+
+
+  cancelBtn.addEventListener('click', function(e) {
+      orderSummary.classList.remove('o-checkout');
+      orderBtn.classList.remove('hidden');
+      layer.classList.remove('show');
+      textSuccess.classList.add('hidden');
+      orderSummaryBody.classList.remove('hidden');
+      checkoutBtns.classList.add('hidden');
+      checkoutPrice.classList.add('hidden');
+  })
 
 });

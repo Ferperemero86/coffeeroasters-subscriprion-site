@@ -1,0 +1,14 @@
+.a-btn-fourth {
+  @extend .a-btn-second;
+  @include bg-color('primary');
+
+  &:hover {
+    @include bg-color('primary');
+    @include transition('color', 1s);
+  }
+  
+}
+
+
+
+

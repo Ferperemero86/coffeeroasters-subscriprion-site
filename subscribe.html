@@ -7,7 +7,10 @@
   <link rel="stylesheet" href="dist/main.css">
   <title>Subscribe</title>
 </head>
+
 <body>
+
+  <div class="layer hidden"></div>
 
   <!-- Menu Bar -->
   <div class="o-menu-bar-primary container">
@@ -37,7 +40,7 @@
             coffees from our best roasters delivered directly to your door, at your schedule.
           </p>
         </div>
-        <button class="content-btn a-btn-primary">Create your plan</button>
+        <button class="content-btn summary-btn a-btn-primary">Create your plan</button>
       </div>
     </header>
   </div>
@@ -381,6 +384,33 @@
 
     </section>
     <!-- End selection menu-->
+
+    <!-- Order Summary -->
+    <div class="container">
+      <div class="o-order-summary margin-top">
+        <div class="o-order-summary-body bg-color-eight">
+          <h3 class="heading a-heading-3-second">ORDER SUMMARY</h3>
+          <p class="text a-text-second">
+            “I drink my coffee as <span class="how color-third"></span>, with a <span class="type color-third"></span> type of bean. 
+            <span class="quantity color-third"></span> ground ala <span class="grind color-third"></span>, 
+            sent to me <span class="delivery color-third"></span>.”
+          </p>
+        </div>
+        <button class="o-order-summary-btn summary-btn a-btn-second">Create my plan!</button>
+        <div class="o-checkout-price hidden">
+          <p class="a-text">$14.00 / mo</p>
+        </div>
+        <div class="text-success hidden">
+          <h1 class="a-text">Thanks! Order Success!</h1>
+        </div>
+        <div class="o-checkout-btns hidden">
+          <button class="o-order-summary-btn checkout a-btn-second">Checkout</button>
+          <button class="o-order-summary-btn cancel a-btn-fourth">Cancel</button>
+        </div>
+
+      </div>
+    </div>
+
   </main>
 
   <!-- Footer -->

@@ -1,0 +1,5 @@
+.a-text-fifth {
+  @extend .a-text;
+  @include color('seventh');
+  @include font-size(0.7rem);
+}

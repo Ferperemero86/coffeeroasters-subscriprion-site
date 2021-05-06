@@ -1,0 +1,35 @@
+.o-checkout {
+  width: 90%;
+  padding: 1.5rem;
+  position: absolute;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  top: 0;
+  z-index: 9999;
+  transform: translateX(-50%);
+  left: 50%;
+  @include bg-color('second');
+}
+
+
+.o-checkout-btns,
+.o-checkout-price,
+.o-checkout-text {
+  padding: 0rem 1.5rem;
+}
+
+.text-success {
+  padding: 0rem 1.5rem;
+}
+
+.layer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 9;
+  opacity: 0.8;
+  background: black;
+}

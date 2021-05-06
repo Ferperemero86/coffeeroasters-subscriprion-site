@@ -13,6 +13,7 @@
 @import './components/atoms/button/btn-primary';
 @import './components/atoms/button/btn-second';
 @import './components/atoms/button/btn-third';
+@import './components/atoms/button/btn-fourth';
 @import './components/atoms/button/btn-nav';
 
 @import './components/atoms/logo/logo';
@@ -22,6 +23,7 @@
 @import './components/atoms/text/text-second';
 @import './components/atoms/text/text-third';
 @import './components/atoms/text/text-fourth';
+@import './components/atoms/text/text-fifth';
 
 @import './components/atoms/heading/heading';
 @import './components/atoms/heading/heading-second';
@@ -94,6 +96,8 @@
 @import './components/organisms/sections/quality';
 @import './components/organisms/sections/headquarters';
 @import './components/organisms/sections/selection-menu';
+@import './components/organisms/sections/order-summary';
+@import './components/organisms/sections/checkout';
 
 @import './components/organisms/footer/footer';
 @import './components/organisms/footer/footer-primary';
