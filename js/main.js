@@ -130,7 +130,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
   //// Checkout ////
-  const orderBtn = document.querySelector('.summary-btn');
+  const orderBtn = document.querySelector('.o-order-summary-btn');
   const checkoutBtns = document.querySelector('.o-checkout-btns');
   const checkoutBtn = document.querySelector('.o-checkout-btns .checkout');
   const cancelBtn = document.querySelector('.o-checkout-btns .cancel');
