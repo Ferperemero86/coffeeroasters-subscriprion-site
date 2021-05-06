@@ -636,7 +636,7 @@ a {
   }
 }
 
-.a-text, .a-text-second, .a-text-fourth {
+.a-text, .a-text-second, .a-text-fourth, .a-text-fifth {
   display: block;
   font-size: 0.9375rem;
   line-height: 1.75rem;
@@ -644,7 +644,7 @@ a {
 }
 
 @media screen and (min-width: 62rem) {
-  .a-text, .a-text-second, .a-text-fourth {
+  .a-text, .a-text-second, .a-text-fourth, .a-text-fifth {
     font-size: 1.125rem;
     line-height: 1.875rem;
   }
@@ -662,6 +662,10 @@ a {
 
 .a-text-fourth {
   color: #343e4c;
+}
+
+.a-text-fifth {
+  color: #848990;
 }
 
 .a-heading-1, .a-heading-1-second, .a-heading-1-fourth, .a-heading-1-fifth {
@@ -806,7 +810,6 @@ a {
 }
 
 .a-hamburger {
-  display: inline-block;
   width: 1rem;
   height: 0.9375rem;
   color: #343e4c;
@@ -1149,6 +1152,7 @@ a {
 }
 
 .m-vertical-menu {
+  padding-top: 3rem;
   text-align: center;
 }
 
@@ -1158,6 +1162,27 @@ a {
 
 .m-vertical-menu-link:not(:first-child) {
   margin-top: 1.5rem;
+}
+
+.m-mobile-menu {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+@media screen and (min-width: 62rem) {
+  .m-mobile-menu {
+    display: none;
+  }
+}
+
+.m-mobile-menu-links {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  opacity: 0.9;
+  background-color: white;
 }
 
 @media screen and (min-width: 90rem) {
@@ -1768,8 +1793,13 @@ a {
 }
 
 .o-checkout-btns,
-.o-checkout-price {
-  padding: 0 1.5rem;
+.o-checkout-price,
+.o-checkout-text {
+  padding: 0rem 1.5rem;
+}
+
+.text-success {
+  padding: 0rem 1.5rem;
 }
 
 .layer {
