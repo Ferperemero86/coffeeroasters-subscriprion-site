@@ -1739,6 +1739,10 @@ a {
   overflow: hidden;
 }
 
+.o-selection-menu-field .menu-field-content .menu-field-card:hover {
+  background-color: none;
+}
+
 @media screen and (min-width: 90rem) {
   .o-selection-menu-field .menu-field-content .menu-field-card:hover {
     cursor: pointer;

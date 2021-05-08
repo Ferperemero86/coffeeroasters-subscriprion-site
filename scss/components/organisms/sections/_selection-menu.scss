@@ -23,7 +23,7 @@
     .menu-field-card {
 
       &:hover {
-
+        background-color: none;
 
         @include breakpoint-up('lg') {
           cursor: pointer;
