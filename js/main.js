@@ -15,7 +15,8 @@ document.addEventListener('DOMContentLoaded', function() {
     'type': 'Single Origin',
     'quantity': '250g',
     'grind': 'Wholebean',
-    'delivery': 'Every Week'
+    'delivery': 'Every Week',
+    'price': '$9.20'
   };
 
 
@@ -82,6 +83,18 @@ document.addEventListener('DOMContentLoaded', function() {
 
     if (cardHeading === 'Every week' || cardHeading === 'Every 2 weeks' || cardHeading === 'Every month') {
       orderSumary['delivery'] = cardHeading;
+
+      if (cardHeading === 'Every week') {
+        orderSumary['price'] = '$9.20';
+      }
+
+      if (cardHeading === 'Every 2 weeks') {
+        orderSumary['price'] = '$11.60';
+      }
+
+      if (cardHeading === 'Every month') {
+        orderSumary['price'] = '$14.00';
+      }
     }
   }
 
@@ -151,6 +164,7 @@ document.addEventListener('DOMContentLoaded', function() {
     orderSummary.classList.add('o-checkout');
     checkoutPrice.classList.remove('hidden');
     layer.classList.add('show');
+    checkoutPrice.innerHTML = '<p>'+ orderSumary['price'] + '/month' + '<p>';
   });
 
 
