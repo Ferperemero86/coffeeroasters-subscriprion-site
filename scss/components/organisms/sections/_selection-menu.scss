@@ -24,8 +24,12 @@
 
       &:hover {
 
-        cursor: pointer;
-        @include bg-color('fifth');
+
+        @include breakpoint-up('lg') {
+          cursor: pointer;
+          @include bg-color('fifth');
+        }
+        
       }
 
     }

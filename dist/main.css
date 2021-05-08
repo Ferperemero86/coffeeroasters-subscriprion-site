@@ -1739,9 +1739,11 @@ a {
   overflow: hidden;
 }
 
-.o-selection-menu-field .menu-field-content .menu-field-card:hover {
-  cursor: pointer;
-  background-color: #f9d6bd;
+@media screen and (min-width: 90rem) {
+  .o-selection-menu-field .menu-field-content .menu-field-card:hover {
+    cursor: pointer;
+    background-color: #f9d6bd;
+  }
 }
 
 .o-selection-menu-field .card-active {
